@@ -1,0 +1,145 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "kuka": "https://www.kuka.com/vocab#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+
+    "Organization": "schema:Organization",
+    "name": "schema:name",
+    "description": "schema:description",
+    "url": {
+      "@id": "schema:url",
+      "@type": "@id"
+    },
+    "sameAs": {
+      "@id": "schema:sameAs",
+      "@type": "@id"
+    },
+    "foundingDate": "schema:foundingDate",
+    "foundingLocation": "schema:foundingLocation",
+    "parentOrganization": "schema:parentOrganization",
+    "industry": "schema:industry",
+    "knowsAbout": "schema:knowsAbout",
+
+    "IndustrialRobot": {
+      "@id": "kuka:IndustrialRobot",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": { "@id": "schema:Product" }
+    },
+    "CollaborativeRobot": {
+      "@id": "kuka:CollaborativeRobot",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": { "@id": "kuka:IndustrialRobot" }
+    },
+    "AutonomousMobileRobot": {
+      "@id": "kuka:AutonomousMobileRobot",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": { "@id": "schema:Product" }
+    },
+    "RobotController": {
+      "@id": "kuka:RobotController",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": { "@id": "schema:Product" }
+    },
+    "RobotSoftware": {
+      "@id": "kuka:RobotSoftware",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": { "@id": "schema:SoftwareApplication" }
+    },
+
+    "payload": {
+      "@id": "kuka:payload",
+      "@type": "xsd:decimal",
+      "rdfs:label": "Payload (kg)"
+    },
+    "reach": {
+      "@id": "kuka:reach",
+      "@type": "xsd:decimal",
+      "rdfs:label": "Reach (mm)"
+    },
+    "axes": {
+      "@id": "kuka:axes",
+      "@type": "xsd:integer",
+      "rdfs:label": "Number of robot axes"
+    },
+    "controllerGeneration": {
+      "@id": "kuka:controllerGeneration",
+      "rdfs:label": "Controller generation (e.g. KR C4, KR C5)"
+    },
+    "operatingSystem": {
+      "@id": "kuka:operatingSystem",
+      "rdfs:label": "Robot operating system (e.g. KSS, iiQKA.OS)"
+    },
+    "programmingLanguage": {
+      "@id": "kuka:programmingLanguage",
+      "rdfs:label": "Programming language (e.g. KRL)"
+    },
+    "integrationProtocol": {
+      "@id": "kuka:integrationProtocol",
+      "rdfs:label": "Supported integration protocol (e.g. OPC UA, RSI, PROFINET)"
+    },
+    "productFamily": {
+      "@id": "kuka:productFamily",
+      "rdfs:label": "Product family (e.g. KR AGILUS, KR QUANTEC, LBR iiwa)"
+    },
+    "mountingPosition": {
+      "@id": "kuka:mountingPosition",
+      "rdfs:label": "Allowable mounting orientations (floor, ceiling, wall)"
+    },
+    "repeatability": {
+      "@id": "kuka:repeatability",
+      "@type": "xsd:decimal",
+      "rdfs:label": "Pose repeatability (mm)"
+    },
+    "isoProtectionClass": {
+      "@id": "kuka:isoProtectionClass",
+      "rdfs:label": "IP protection class"
+    },
+    "iiQoT": {
+      "@id": "kuka:iiQoT",
+      "@type": "rdfs:Class",
+      "rdfs:subClassOf": { "@id": "schema:SoftwareApplication" },
+      "rdfs:label": "KUKA iiQoT cloud monitoring platform"
+    },
+    "workEnvelope": {
+      "@id": "kuka:workEnvelope",
+      "rdfs:label": "3-D reachable space of the robot TCP"
+    },
+
+    "@base": "https://www.kuka.com/"
+  },
+  "@type": "Organization",
+  "name": "KUKA AG",
+  "url": "https://www.kuka.com",
+  "foundingDate": "1898",
+  "foundingLocation": "Augsburg, Bavaria, Germany",
+  "parentOrganization": {
+    "name": "Midea Group",
+    "url": "https://www.midea-group.com"
+  },
+  "industry": "Industrial Automation & Robotics",
+  "sameAs": [
+    "https://www.linkedin.com/company/kuka",
+    "https://twitter.com/KUKAGlobal",
+    "https://www.youtube.com/user/KUKAGlobal",
+    "https://github.com/kroshu"
+  ],
+  "knowsAbout": [
+    "Industrial Robots",
+    "Collaborative Robots",
+    "Autonomous Mobile Robots",
+    "Robot Controllers",
+    "KUKA Robot Language",
+    "iiQKA.OS",
+    "OPC UA",
+    "PROFINET",
+    "EtherCAT",
+    "Intralogistics Automation",
+    "Automotive Manufacturing",
+    "Machine Tending",
+    "Welding Automation",
+    "Palletizing"
+  ]
+}

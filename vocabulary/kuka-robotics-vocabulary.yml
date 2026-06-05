@@ -1,0 +1,181 @@
+vocabulary:
+  name: KUKA Robotics Vocabulary
+  description: >-
+    Key industrial and manufacturing concepts associated with KUKA AG's robotics
+    and automation product ecosystem, covering robot types, control systems,
+    programming interfaces, and integration protocols.
+  version: "1.0"
+  terms:
+    - term: Industrial Robot
+      definition: >-
+        A programmable, multi-axis mechanical manipulator designed for
+        automated manufacturing tasks such as welding, assembly, material
+        handling, painting, and palletizing. KUKA's KR series represents its
+        core six-axis articulated industrial robot line.
+      tags:
+        - hardware
+        - robotics
+        - manufacturing
+
+    - term: Collaborative Robot (Cobot)
+      definition: >-
+        A robot designed to operate safely alongside human workers without
+        safety fencing, featuring force/torque sensing and speed-limiting
+        behaviors. KUKA's LBR iiwa and LBR iisy are its flagship cobot lines.
+      tags:
+        - hardware
+        - robotics
+        - safety
+        - cobot
+
+    - term: Autonomous Mobile Robot (AMR)
+      definition: >-
+        A self-navigating mobile platform capable of moving through a facility
+        without fixed guide paths, using onboard sensors and mapping. KUKA's
+        KMR iiwa and KMP platforms combine AMR mobility with robotic arm
+        payloads.
+      tags:
+        - hardware
+        - robotics
+        - logistics
+        - mobility
+
+    - term: KUKA Robot Language (KRL)
+      definition: >-
+        KUKA's proprietary motion-programming language used on KR C4-class
+        controllers (KSS/VSS). KRL programs define motion trajectories, I/O
+        signals, conditional logic, and interrupt routines for robot
+        applications.
+      tags:
+        - software
+        - programming
+        - KR C4
+        - KSS
+
+    - term: iiQKA.OS
+      definition: >-
+        The operating system introduced for the KR C5 and KR C5 micro
+        controller generation, replacing the legacy KSS stack. iiQKA.OS2
+        exposes an App-based programming model via iiQKA Creator tools and
+        supports gRPC-based external control interfaces.
+      tags:
+        - software
+        - operating-system
+        - KR C5
+        - iiQKA
+
+    - term: KUKA.RobotSensorInterface (RSI)
+      definition: >-
+        A real-time Ethernet-based sensor interface that allows external
+        controllers or computers to send position or force corrections to a
+        KUKA robot at cycle times down to 4 ms. Used for force control, seam
+        tracking, and adaptive machining.
+      tags:
+        - protocol
+        - integration
+        - real-time
+        - sensor
+
+    - term: KUKA.EthernetKRL
+      definition: >-
+        An extension for KR C4 controllers that enables TCP/IP socket
+        communication directly from KRL programs, allowing robots to exchange
+        data with PLCs, vision systems, and other devices over Ethernet.
+      tags:
+        - protocol
+        - integration
+        - networking
+        - KR C4
+
+    - term: OPC UA
+      definition: >-
+        OPC Unified Architecture — a platform-independent, service-oriented
+        communication standard for industrial automation. KUKA.OPC UA exposes
+        robot state, program control, and I/O data as an OPC UA server,
+        enabling integration with SCADA, MES, and IIoT platforms.
+      tags:
+        - protocol
+        - standard
+        - IIoT
+        - integration
+
+    - term: mxAutomation
+      definition: >-
+        A KUKA software option (KUKA.PLC mxAutomation) that enables PLC-based
+        robot control via PROFINET or EtherNet/IP, replacing KRL motion
+        programs with Siemens or Rockwell function blocks for motion
+        parameterization and sequencing.
+      tags:
+        - protocol
+        - integration
+        - PLC
+        - PROFINET
+
+    - term: Robot Controller
+      definition: >-
+        The hardware cabinet that hosts the robot operating software and
+        executes motion programs. KUKA's current controller generations are
+        KR C4 (running KSS/VSS) and KR C5 / KR C5 micro (running iiQKA.OS),
+        with the KR C5 micro offering a compact form factor for smaller cells.
+      tags:
+        - hardware
+        - controller
+        - KR C4
+        - KR C5
+
+    - term: iiQoT
+      definition: >-
+        KUKA's cloud-based condition monitoring and fleet management platform
+        that aggregates operational data from connected robots and controllers,
+        providing dashboards, predictive maintenance indicators, and utilization
+        analytics.
+      tags:
+        - software
+        - cloud
+        - IIoT
+        - monitoring
+
+    - term: KUKA Xpert
+      definition: >-
+        KUKA's online documentation and knowledge portal providing access to
+        technical manuals, programming guides, spare parts catalogs, and
+        training materials for KUKA products.
+      tags:
+        - documentation
+        - portal
+        - support
+
+    - term: Payload
+      definition: >-
+        The maximum mass (in kg) a robot can handle at its wrist flange
+        including tooling and workpiece weight. Payload is a primary selection
+        criterion across KUKA's KR AGILUS, KR CYBERTECH, KR QUANTEC, and KR
+        FORTEC product families.
+      tags:
+        - specification
+        - hardware
+        - robotics
+
+    - term: PROFINET
+      definition: >-
+        An industrial Ethernet standard for real-time communication between
+        controllers and field devices in automation systems. KUKA robots
+        support PROFINET as both device (slave) and controller (master) for
+        integration with Siemens and other PROFINET-based automation systems.
+      tags:
+        - protocol
+        - standard
+        - fieldbus
+        - Siemens
+
+    - term: Work Envelope
+      definition: >-
+        The three-dimensional space reachable by a robot's tool center point
+        (TCP) across all axis combinations. Defined by reach (mm), axis range
+        (degrees), and mounting position, the work envelope determines suitability
+        for a given cell layout.
+      tags:
+        - specification
+        - hardware
+        - robotics
+        - kinematics
