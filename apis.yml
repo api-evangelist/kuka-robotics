@@ -83,10 +83,12 @@ tags:
   - Midea
 url: https://raw.githubusercontent.com/api-evangelist/kuka-robotics/refs/heads/main/apis.yml
 created: '2026-05-25'
-modified: '2026-05-25'
+modified: '2026-10-06'
 specificationVersion: '0.23'
 apis: []
 common:
+  - url: https://www.kuka.com/en-us/company/press/news
+    type: Blog
   - type: VulnerabilityDisclosure
     url: security/kuka-robotics-vulnerability-disclosure.yml
   - type: DomainSecurity
