@@ -1,4 +1,4 @@
-# kuka-robotics
+# KUKA
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,4 +64,93 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-KUKA — German industrial robotics, controllers, and automation software (Midea owned)
+KUKA AG is a German industrial automation company headquartered in Augsburg, Bavaria, founded in 1898 and majority-owned by China's Midea Group since 2016. KUKA designs and manufactures industrial robots, autonomous mobile robots (AMRs), production cells, controllers, and the software stack that drives them. Its product portfolio spans six-axis articulated robots (KR series), sensitive collaborative robots (LBR iiwa, LBR iisy), mobile platforms (KMR iiwa, KMP), and palletizing/welding/CNC cells, controlled by the KR C4 and KR C5 / KR C5 micro controller generations. The robot software stack centers on KUKA System Software (KSS/VSS) for KR C4-class hardware, the newer iiQKA.OS / iiQKA.OS2 operating system for KR C5, and the KUKA Robot Language (KRL) for motion programming, with extension surfaces including KUKA.RobotSensorInterface (RSI), KUKA.EthernetKRL, KUKA.PLC mxAutomation for external PLC control, KUKA.OPC UA, and KUKA.AppTech / iiQKA App Builder for option packages. Engineering and simulation are delivered through iiQWorks (iiQWorks.Sim, iiQWorks.App Builder, iiQWorks.Copilot) and KUKA.Sim, while operational software includes KUKA Xpert (documentation/cloud), KUKA iiQoT (condition monitoring), and KUKA Connect / my.KUKA customer portals. KUKA does not publish a first-party public REST/OpenAPI developer API or an official GitHub organization for its robot control stack; integration is performed through proprietary protocols (RSI, EthernetKRL, mxAutomation, OPC UA, PROFINET, EtherCAT) and SDKs distributed via the iiQKA Creator portal and KUKA Xpert. A meaningful body of open-source KUKA integration code lives in the community-maintained kroshu GitHub organization (ROS 2 drivers, external-control SDK, URDF robot descriptions) and the roboticsapi / openkuka projects. KUKA serves automotive, electronics, battery, metal, consumer goods, healthcare, aerospace, and e-commerce logistics customers, and through its Swisslog subsidiary extends into warehouse and intralogistics automation.
+
+**Areas:** Robotics · Industrial Robots · Industrial Automation · Collaborative Robots · Cobots · Autonomous Mobile Robots · Robot Controllers · Robot Operating System · KRL · KSS · KR C4 · KR C5
+
+## KUKA on APIs.io
+
+Everything profiled for KUKA is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/kuka-robotics/](https://apis.io/providers/kuka-robotics/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Kuka Robotics Context](https://apis.io/jsonld/kuka-robotics/kuka-robotics-context/)
+
+#### Vocabulary (1)
+
+The provider's domain terms, defined.
+
+- [KUKA Robotics Vocabulary](https://apis.io/vocabularies/kuka-robotics/kuka-robotics-vocabulary/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Kuka Robotics Domain Security](https://apis.io/security/kuka-robotics/kuka-robotics-domain-security/)
+- [Kuka Robotics Vulnerability Disclosure](https://apis.io/security/kuka-robotics/kuka-robotics-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.kuka.com)
+- [Blog](https://www.kuka.com/en-us/company/press/news)
+
+## API Evangelist rating
+
+**Kin Score 10.0** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 49.1 |
+| Contract quality | 14.7 |
+| Contract governance | 0.0 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 0.0 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 16.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/kuka-robotics/](https://apis.io/providers/kuka-robotics/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for KUKA: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/kuka-robotics/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
